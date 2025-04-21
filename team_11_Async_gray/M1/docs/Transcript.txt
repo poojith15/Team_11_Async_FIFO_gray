@@ -1,0 +1,43 @@
+do async_fifo_gray_run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:26:48 on Apr 20,2025
+# vlog -reportprogress 300 async_fifo_gray_tb.sv 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 23:26:48 on Apr 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:26:53 on Apr 20,2025, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 1
+# vsim tb "+test_name=UNDERFLOW" 
+# Start time: 23:26:53 on Apr 20,2025
+# Loading sv_std.std
+# Loading work.tb
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: async_fifo_gray_tb.sv Line: 25
+# Write : 13604
+# Write : 24193
+# Write : 54793
+# Write : 22115
+# Write : 31501
+# Write : 39309
+# Write : 33893
+# Write : 21010
+# Read value is 0
+# Read value is 0
+# Read value is 13604
+# Read value is 24193
+# Read value is 54793
+# Read value is 22115
+# Read value is 31501
+# Read value is 39309
+# Read value is 33893
+# 
+# ** Note: $finish    : async_fifo_gray_tb.sv(50)
+#    Time: 295 ps  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at async_fifo_gray_tb.sv line 50
